@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2280" height="1000" viewBox="0 0 2280 1000" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="2170" height="927" viewBox="55 45 2170 927" role="img" aria-labelledby="title desc">
   <title id="title">INT4 CUDA Inference Project Overview</title>
   <desc id="desc">A spacious paper-style overview figure showing the baseline LSQ path, converted low-bit path, runtime backend, evaluation scripts, and shared dataset/tests.</desc>
 
