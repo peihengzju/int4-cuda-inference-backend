@@ -14,6 +14,17 @@ That LSQ work is not only a training dependency. It is the correctness baseline 
 
 This repository asks a systems question: why do low-bit quantized models often remain slower than native FP inference? Starting from a verified LSQ ImageNet reproduction, it uses LSQ as the model-quality baseline and conversion target for downstream deployment/backend work, builds a custom CUDA inference prototype, converts LSQ checkpoints into custom operators, and uses profiler-driven optimization to reduce overhead on the converted profiling path.
 
+## Project Overview
+
+![Project overview](docs/assets/project_overview.svg)
+
+The diagram separates the repository into five parts: baseline inputs, LSQ model build and conversion, custom low-bit modules, the PyTorch C++/CUDA backend, and the evaluation / profiling scripts that validate the converted path against the native LSQ baseline.
+
+Local preview:
+
+- Open [project_overview.svg](/home/yph3738/projects/cuda_optimization/docs/assets/project_overview.svg) directly in VS Code or a browser to inspect the full-size diagram.
+- Open [README.md](/home/yph3738/projects/cuda_optimization/README.md) and use Markdown preview with `Ctrl+Shift+V` in VS Code to see the same image as it will appear on GitHub.
+
 ## Key Contributions
 
 - Built a custom PyTorch CUDA extension for INT4-weight / INT8-activation inference
